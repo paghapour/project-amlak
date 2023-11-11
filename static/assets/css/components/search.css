@@ -1,0 +1,28 @@
+.search_result {
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.search_result .sec_title {
+    font-size: 25px;
+}
+
+.search_result .sec_title span {
+    color: #f2883c;
+}
+
+.search_result .product_item .link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .search_result {
+        margin-top: 175px;
+    }
+    .search_result .sec_title {
+        font-size: 19px;
+        text-align: center;
+    }
+}

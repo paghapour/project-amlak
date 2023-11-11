@@ -1,0 +1,78 @@
+.contact-us {
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.contact-us .image_box {
+    background-image: url("../../img/home/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    border-radius: 300px 300px 30px 30px;
+    border: 5px solid #d9d9d9;
+    position: sticky;
+    top: 130px;
+}
+
+.contact-us form .input_box input,
+.contact-us form .input_box textarea {
+    border: 2px solid #213db5;
+}
+
+.contact-us form .input_box label {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    font-size: 14px;
+    right: 5px;
+    color: #213db5;
+    background-color: #fff;
+    pointer-events: none;
+    padding: 0 10px;
+    transition: all 0.3s;
+}
+
+.contact-us form .input_box input:focus ~ label,
+.contact-us form .input_box input:valid ~ label {
+    bottom: 47px;
+}
+
+.contact-us form .input_box textarea ~ label {
+    bottom: 85%;
+}
+
+.contact-us form .input_box textarea:focus ~ label,
+.contact-us form .input_box textarea:valid ~ label {
+    bottom: 100%;
+}
+
+.contact-us form .submit {
+    font-family: "IRANSans";
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-weight: 100;
+    color: #fff;
+    background-color: #203db5;
+    border-radius: 6px;
+    border: unset;
+    margin-right: auto;
+    display: table;
+    transition: all .4s;
+}
+
+.contact-us form .submit:hover{
+    background-color: #f2883c;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-us {
+        margin-top: 175px;
+    }
+
+    .contact-us .top_title {
+        margin-right: 10px;
+    }
+}

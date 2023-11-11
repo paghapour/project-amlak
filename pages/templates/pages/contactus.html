@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/components/contact-us.css' %}">
+    <title>تماس با ما</title>
+{% endblock %}
+
+{% block content %}
+    {% include 'inc/navbar.html' %}
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="top_title">
+                        <div class="info">
+                            <h3 class="title">تماس با ما</h3>
+                            <p class="desc">برای ارتباط با ما فرم زیر را پر کنید</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 d-lg-block d-none">
+                            <div class="image_box"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input_box">
+                                            <input type="text" required>
+                                            <label for="">نام</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input_box">
+                                            <input type="text" required>
+                                            <label for="">نام خانوادگی</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="input_box">
+                                            <input type="email" required>
+                                            <label for="">ایمیل</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input_box">
+                                            <input type="text" required>
+                                            <label for="">شماره تماس</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input_box">
+                                            <input type="text" required>
+                                            <label for="">موضوع</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="input_box">
+                                            <textarea required></textarea>
+                                            <label>متن پیام</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit">ثبت</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="item">
+                        <div class="head">
+                            <h4 class="title">نحوه ی زمان بازدید از ملک ها به چه صورت است؟</h4>
+                            <i class="icon icon-arrow-left"></i>
+                        </div>
+                        <div class="desc">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <h4 class="title">نحوه ی زمان بازدید از ملک ها به چه صورت است؟</h4>
+                            <i class="icon icon-arrow-left"></i>
+                        </div>
+                        <div class="desc">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <h4 class="title">نحوه ی زمان بازدید از ملک ها به چه صورت است؟</h4>
+                            <i class="icon icon-arrow-left"></i>
+                        </div>
+                        <div class="desc">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'assets/js/faq.js' %}"></script>
+{% endblock %}

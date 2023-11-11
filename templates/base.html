@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% endblock %}
+
+
+
+    <link rel="stylesheet" href="{% static 'assets/css/base/faq.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/base/font.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/base/grid.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/base/main.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/base/slick.css' %}">
+
+</head>
+
+
+<body>
+{% include 'inc/navbar.html' %}
+{% block content %}{% endblock %}
+{% include 'inc/footer.html' %}
+<script src="{% static '/assets/js/app.js' %}"></script>
+</body>
+</html>

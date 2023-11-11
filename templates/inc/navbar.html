@@ -1,0 +1,48 @@
+{% load static %}
+
+<div class="overlay"></div>
+
+<div class="mobile_menu">
+    <div class="top">
+        <img src="{% static 'assets/image/logo.svg' %}" alt="image" class="logo">
+    </div>
+    <ul class="menu_links">
+        <li><a href="{% url 'product_list' %}" class="link">ملک ها</a></li>
+        <li><a href="{% url 'reg_melk' %}" class="link">ثبت ملک</a></li>
+        <li><a href="{% url 'post_list' %}" class="link">بلاگ</a></li>
+        <li><a href="{% url 'contactus' %}" class="link">تماس با ما</a></li>
+        <li><a href="{% url 'aboutus' %}" class="link">درباره ما</a></li>
+    </ul>
+</div>
+<nav class="navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <a href="#" class="logo">
+                        <img src="{% static 'assets/image/logo.svg' %}" alt="logo">
+                        <span>پر از ملک</span>
+                    </a>
+                    <ul class="links">
+                        <li><a href="{% url 'product_list' %}" class="link">ملک ها</a></li>
+                        <li><a href="{% url 'reg_melk' %}" class="link">ثبت ملک</a></li>
+                        <li><a href="{% url 'post_list' %}" class="link">بلاگ</a></li>
+                        <li><a href="{% url 'contactus' %}" class="link">تماس با ما</a></li>
+                        <li><a href="{% url 'aboutus' %}" class="link">درباره ما</a></li>
+                    </ul>
+                    <div class="burgger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <form id="searchForm" class="search">
+                        <div class="input_box">
+                            <input type="search" placeholder="جتسجو کنید...">
+                        </div>
+                        <i id="searchButton" class="icon icon-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

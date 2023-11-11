@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/components/product-list.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/base/slick.css' %}">
+    <title>لیست محصولات</title>
+{% endblock %}
+
+{% block content %}
+    <div class="product_list">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="top_search">
+                        <div class="input_box">
+                            <input type="search" placeholder="جستجو کنید...">
+                        </div>
+                        <i class="icon icon-search"></i>
+                    </div>
+
+                    <div class="favorites">
+                        <div class="top_title">
+                            <div class="info">
+                                <h3 class="title">محبوب ترین ها</h3>
+                            </div>
+                            <div class="action_arrow d-md-block d-none">
+                                <i class="icon icon-arrow-right next_slide"></i>
+                                <i class="icon icon-arrow-right prev_slide"></i>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            {% for product in products %}
+                            	<a href="{{ product.get_absolute_url }}" class="product_item sec">
+                                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                                <h3 class="title">{{ product.title }}</h3>
+                                <p class="desc">
+                                   {{ product.description }}
+                                </p>
+                                <span class="link">خواندن</span>
+                            </a>
+                            {% endfor %}
+                        </div>
+
+                        <div class="action_arrow d-md-none d-block">
+                            <i class="icon icon-arrow-right next_slide"></i>
+                            <i class="icon icon-arrow-right prev_slide"></i>
+                        </div>
+                    </div>
+
+                    <div class="list_items">
+                        <div class="top_title">
+                            <div class="info">
+                                <h3 class="title">ملک ها</h3>
+                            </div>
+                            <span class="d-md-none d-block" id="filter-btn">فیلتر</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5">
+                                <div id="filter-menu" class="side_bar">
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value1">خرید</label>
+                                                <input id="value1" type="checkbox">
+                                            </div>
+                                            <div class="list">
+                                                <label for="value10">خرید</label>
+                                                <input id="value10" type="checkbox">
+                                            </div>
+                                            <div class="list">
+                                                <label for="value11">خرید</label>
+                                                <input id="value11" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value2">خرید</label>
+                                                <input id="value2" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value3">خرید</label>
+                                                <input id="value3" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value4">خرید</label>
+                                                <input id="value4" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value5">خرید</label>
+                                                <input id="value5" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value6">خرید</label>
+                                                <input id="value6" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value7">خرید</label>
+                                                <input id="value7" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value8">خرید</label>
+                                                <input id="value8" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="filterItem" class="item">
+                                        <div class="head">
+                                            <p class="title">نوع ملک</p>
+                                            <i class="icon icon-arrow-right"></i>
+                                        </div>
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value9">خرید</label>
+                                                <input id="value9" type="checkbox">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="head">
+                                            <p class="title">اسانسور</p>
+                                        </div>
+
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value14">دارد</label>
+                                                <input id="value14" name="elevator" type="radio">
+                                            </div>
+                                            <div class="list">
+                                                <label for="value15">ندارد</label>
+                                                <input id="value15" name="elevator" type="radio">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="head">
+                                            <p class="title">انباری</p>
+                                        </div>
+
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value16">دارد</label>
+                                                <input id="value16" name="warehouse" type="radio">
+                                            </div>
+                                            <div class="list">
+                                                <label for="value17">ندارد</label>
+                                                <input id="value17" name="warehouse" type="radio">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="head">
+                                            <p class="title">بالکن</p>
+                                        </div>
+
+                                        <form class="lists">
+                                            <div class="list">
+                                                <label for="value18">دارد</label>
+                                                <input name="balcony" id="value18" type="radio">
+                                            </div>
+                                            <div class="list">
+                                                <label for="value19">ندارد</label>
+                                                <input name="balcony" id="value19" type="radio">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-7">
+                                <div class="row">
+                                    {% for product in products %}
+                                        <div class="col-lg-6">
+                                            <a href="#" class="product_item sec">
+                                                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                                                <h3 class="title">{{ product.title }}</h3>
+                                                <p class="desc">
+                                                    {{ product.description }}
+                                                </p>
+                                                <span class="link">خواندن</span>
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/product-list.js' %}"></script>
+{% endblock %}

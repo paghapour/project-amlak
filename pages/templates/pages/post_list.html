@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/components/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="blog_hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7">
+                    <div class="slider">
+                        <a href="#" class="item main">
+                            <img src="{% static 'assets/img/blog/1.jpeg' %}" alt="image" class="image">
+                            <div class="info">
+                                <h3 class="title">در پی تنش های اخیر آمریکا قیمت دلار فروریخت</h3>
+                                <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="item main">
+                            <img src="{% static 'assets/img/blog/1.jpeg' %}" alt="image" class="image">
+                            <div class="info">
+                                <h3 class="title">در پی تنش های اخیر آمریکا قیمت دلار فروریخت</h3>
+                                <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="item main">
+                            <img src="{% static 'assets/img/blog/1.jpeg' %}" alt="image" class="image">
+                            <div class="info">
+                                <h3 class="title">در پی تنش های اخیر آمریکا قیمت دلار فروریخت</h3>
+                                <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="item main">
+                            <img src="{% static 'assets/img/blog/1.jpeg' %}" alt="image" class="image">
+                            <div class="info">
+                                <h3 class="title">در پی تنش های اخیر آمریکا قیمت دلار فروریخت</h3>
+                                <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 d-md-block d-none">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <a href="#" class="item">
+                                <img src="{% static 'assets/img/blog/2.jpeg' %}" alt="image" class="image">
+                                <div class="info">
+                                    <h3 class="title">در پی تنش های اخیر آمریکا</h3>
+                                    <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                        استفاده
+                                        قرار گیرد.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <a href="#" class="item">
+                                <img src="{% static 'assets/img/blog/3.jpeg' %}" alt="image" class="image">
+                                <div class="info">
+                                    <h3 class="title">در پی تنش های اخیر آمریکا</h3>
+                                    <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                        استفاده
+                                        قرار گیرد.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-lg-block d-none">
+                            <a href="#" class="item">
+                                <img src="{% static 'assets/img/blog/4.jpeg' %}" alt="image" class="image">
+                                <div class="info">
+                                    <h3 class="title">در پی تنش های اخیر آمریکا</h3>
+                                    <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                        استفاده
+                                        قرار گیرد.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-lg-block d-none">
+                            <a href="#" class="item">
+                                <img src="{% static 'assets/img/blog/5.jpeg' %}" alt="image" class="image">
+                                <div class="info">
+                                    <h3 class="title">در پی تنش های اخیر آمریکا</h3>
+                                    <p class="desc">صلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                        استفاده
+                                        قرار گیرد.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog_items">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="top_title d-md-block d-none">
+                        <div class="info">
+                            <h3 class="title">بلاگ</h3>
+                            <p class="desc">اینجا میتونی تازه ترین مطالب در حوزه املاک رو بخونی</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for post in post %}
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/blog.js' %}"></script>
+{% endblock %}

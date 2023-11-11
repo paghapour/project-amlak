@@ -1,0 +1,38 @@
+{% load static %}
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content">
+                    <div class="top">
+                        <a href="{% url 'home' %}" class="logo">
+                            <img src="{% static 'assets/image/logo.svg' %}" alt="logo">
+                            پر از ملک
+                        </a>
+                        <ul class="links">
+                            <li><a href="{% url 'product_list' %}" class="link">ملک ها</a></li>
+                            <li><a href="{% url 'reg_melk' %}" class="link">ثبت ملک</a></li>
+                            <li><a href="{% url 'post_list' %}" class="link">بلاگ</a></li>
+                            <li><a href="{% url 'contactus' %}" class="link">تماس با ما</a></li>
+                            <li><a href="{% url 'aboutus' %}" class="link">درباره ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p class="address"><i class="icon icon-location"></i> کاشان، خیابان امیرکبیر، بلوار امیر
+                            المومنین</p>
+
+                        <div class="social_media">
+                            <a href="#" class="link"><i class="icon icon-whatsapp"></i></a>
+                            <a href="#" class="link"><i class="icon icon-instagram"></i></a>
+                            <a href="#" class="link"><i class="icon icon-telegram"></i></a>
+                            <a href="#" class="link"><i class="icon icon-phone"></i></a>
+                        </div>
+                    </div>
+
+                    <p class="bottom">تمامی حقوق این سایت متعلق به مجموعه <a href="#">دکو</a> می باشد</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

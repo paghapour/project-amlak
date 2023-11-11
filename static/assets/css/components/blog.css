@@ -1,0 +1,120 @@
+/*-------------------- blog_hero style  --------------------*/
+.blog_hero {
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.blog_hero .item {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blog_hero .item:not(:nth-child(1)) {
+    display: none;
+}
+
+.blog_hero .item .image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 267px;
+}
+
+.blog_hero .item.main .image {
+    height: 550px;
+}
+
+.blog_hero .item .info {
+    position: absolute;
+    bottom: -140px;
+    transition: all .4s;
+    background-color: #213db5;
+    color: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 10px 10px;
+    width: 100%;
+    right: 0;
+}
+
+.blog_hero .item:hover .info{
+    bottom: 0; 
+}
+
+.blog_hero .item.main .info {
+    padding: 20px 10px;
+}
+
+.blog_hero .item .info .title {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.blog_hero .item.main .info .title {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.blog_hero .item .info .desc {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.blog_hero .item.main .info .desc {
+    font-size: 15px;
+    line-height: 1.7;
+}
+/*-------------------- blog_hero style end --------------------*/
+
+/*-------------------- blog_items style --------------------*/
+.blog_items {
+    margin-bottom: 100px;
+}
+
+.blog_items .product_item .link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog_items .top_title {
+    margin-bottom: 25px;
+}
+
+.blog_items .product_item {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.blog_hero .slick-dots{
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -20px;
+}
+
+/*-------------------- blog_items style end --------------------*/
+
+@media screen and (max-width: 767px) {
+    .blog_hero {
+        margin-top: 175px;
+        margin-bottom: 50px;
+    }
+    .blog_hero .item {
+        display: block !important;
+    }
+
+    .blog_hero .item.main .image {
+        height: 400px;
+    }
+
+    .blog_hero .item.main .info .title {
+        font-size: 17px;
+    }
+
+    .blog_hero .item.main .info .desc {
+        font-size: 14px;
+    }
+
+}

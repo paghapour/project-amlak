@@ -1,0 +1,356 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/components/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <section class="hero">
+        <div class="slider">
+            <a href="#" class="link"><img src="{% static 'assets/img/home/1.jpg' %}" alt="image" class="image"></a>
+            <a href="#" class="link"><img src="{% static 'assets/img/home/1.jpg' %}" alt="image" class="image"></a>
+            <a href="#" class="link"><img src="{% static 'assets/img/home/1.jpg' %}" alt="image" class="image"></a>
+            <a href="#" class="link"><img src="{% static 'assets/img/home/1.jpg' %}" alt="image" class="image"></a>
+            <a href="#" class="link"><img src="{% static 'assets/img/home/1.jpg' %}" alt="image" class="image"></a>
+        </div>
+        <div class="action_arrow">
+            <i class="icon icon-arrow-right next_slide slick-arrow" style=""></i>
+            <div class="custom_dots"></div>
+            <i class="icon icon-arrow-left prev_slide slick-arrow" style=""></i>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="box">
+                        <div class="info">
+                            <h2 class="title">ملك خودت رو به ما بسپار</h2>
+                            <p class="desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در کاربردهای متنوع با هدف بهبلورم ایپسوم
+                                متن
+                                ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از ...</p>
+
+                        </div>
+                        <a href="#" class="link">مطالعه بیشتر...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special_offers">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="top_title">
+                        <div class="info">
+                            <h3 class="title">پیشنهادات ویژه</h3>
+                            <p class="desc">اینجا پیشنهادات درجه یکی برای خرید مل داری</p>
+                        </div>
+                        <div class="action_arrow d-md-block d-none">
+                            <i class="icon icon-arrow-right next_slide"></i>
+                            <i class="icon icon-arrow-left prev_slide"></i>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="more_item d-lg-flex d-none">
+                        <a href="#" class="link"><img src="{% static 'assets/img/home/1.jpg' %}" alt="image"
+                                                      class="image w-100"></a>
+                        <a href="#" class="link"><img src="{% static 'assets/img/home/1.jpg' %}" alt="image"
+                                                      class="image w-100"></a>
+                    </div>
+                    <div class="action_arrow d-md-none d-block">
+                        <i class="icon icon-arrow-right next_slide"></i>
+                        <i class="icon icon-arrow-left prev_slide"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advertisements">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="top_title">
+                        <div class="info">
+                            <h3 class="title">آگهی ها</h3>
+                            <p class="desc">با فیلتر کردن انتخاب خود را راحت تر کنید</p>
+                        </div>
+                    </div>
+                    <ul class="filters">
+                        <li>
+                            منزل
+                        </li>
+                        <li>اپارتمان</li>
+                        <li>زمین و کلنگی</li>
+                        <li>باف و اراضی</li>
+                        <li>تجاری</li>
+                        <li>صنعتی</li>
+                        <li>اداری</li>
+                        <li>تهاتر</li>
+                        <li>اجاره روزانه</li>
+                        <li>پیش فروش</li>
+                    </ul>
+                    <div class="content">
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                        <a href="#" class="product_item">
+                            <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                            <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                            <div class="bottom">
+                                <p class="code">کد : 001</p>
+                                <p class="price">530 میلیون تومان</p>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" class="page_link">موارد بیشتر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="slider">
+                        <div style="margin: 23px;" class="box">
+                            <div class="info">
+                                <h2 class="title">ملک مد نظر خود را پیدا نکرده اید؟</h2>
+                                <p class="desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                    از
+                                    طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در کاربردهای متنوع با هدف بهبلورم
+                                    ایپسوم
+                                    متن
+                                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از ...</p>
+
+                            </div>
+                            <a href="#" class="link">مطالعه بیشتر...</a>
+                        </div>
+                        <div class="box" style="margin: 23px;">
+                            <div class="info">
+                                <h2 class="title">ملک مد نظر خود را پیدا نکرده اید؟</h2>
+                                <p class="desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                    از
+                                    طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در کاربردهای متنوع با هدف بهبلورم
+                                    ایپسوم
+                                    متن
+                                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از ...</p>
+
+                            </div>
+                            <a href="#" class="link">مطالعه بیشتر...</a>
+                        </div>
+                    </div>
+                    <div class="action_arrow">
+                        <i class="icon icon-arrow-right next_slide slick-arrow" style=""></i>
+                        <i class="icon icon-arrow-left prev_slide slick-arrow" style=""></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="top_title">
+                        <div class="info">
+                            <h3 class="title">بلاگ</h3>
+                        </div>
+                        <div class="action_arrow d-md-block d-none">
+                            <i class="icon icon-arrow-right next_slide slick-arrow"></i>
+                            <i class="icon icon-arrow-left prev_slide slick-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="ltr" class="slider">
+            <a href="#" class="product_item sec">
+                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                <p class="desc">
+                    واحد اپارتمان در منطقه یک همراه با یک خواب واحد اپارتمان در منطقه یک همراه با یک خواب
+                    ...
+                </p>
+                <p class="price">530 میلیون تومان</p>
+                <div class="bottom">
+                    <p class="code">کد : 001</p>
+                    <span class="link">بیشتر</span>
+                </div>
+            </a>
+            <a href="#" class="product_item sec">
+                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                <p class="desc">
+                    واحد اپارتمان در منطقه یک همراه با یک خواب واحد اپارتمان در منطقه یک همراه با یک خواب
+                    ...
+                </p>
+                <p class="price">530 میلیون تومان</p>
+                <div class="bottom">
+                    <p class="code">کد : 001</p>
+                    <span class="link">بیشتر</span>
+                </div>
+            </a>
+            <a href="#" class="product_item sec">
+                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                <p class="desc">
+                    واحد اپارتمان در منطقه یک همراه با یک خواب واحد اپارتمان در منطقه یک همراه با یک خواب
+                    ...
+                </p>
+                <p class="price">530 میلیون تومان</p>
+                <div class="bottom">
+                    <p class="code">کد : 001</p>
+                    <span class="link">بیشتر</span>
+                </div>
+            </a>
+            <a href="#" class="product_item sec">
+                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                <p class="desc">
+                    واحد اپارتمان در منطقه یک همراه با یک خواب واحد اپارتمان در منطقه یک همراه با یک خواب
+                    ...
+                </p>
+                <p class="price">530 میلیون تومان</p>
+                <div class="bottom">
+                    <p class="code">کد : 001</p>
+                    <span class="link">بیشتر</span>
+                </div>
+            </a>
+            <a href="#" class="product_item sec">
+                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                <p class="desc">
+                    واحد اپارتمان در منطقه یک همراه با یک خواب واحد اپارتمان در منطقه یک همراه با یک خواب
+                    ...
+                </p>
+                <p class="price">530 میلیون تومان</p>
+                <div class="bottom">
+                    <p class="code">کد : 001</p>
+                    <span class="link">بیشتر</span>
+                </div>
+            </a>
+            <a href="#" class="product_item sec">
+                <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                <h3 class="title">واحد اپارتمان در منطقه یک</h3>
+                <p class="desc">
+                    واحد اپارتمان در منطقه یک همراه با یک خواب واحد اپارتمان در منطقه یک همراه با یک خواب
+                    ...
+                </p>
+                <p class="price">530 میلیون تومان</p>
+                <div class="bottom">
+                    <p class="code">کد : 001</p>
+                    <span class="link">بیشتر</span>
+                </div>
+            </a>
+        </div>
+        <div class="action_arrow d-md-none d-block">
+            <i class="icon icon-arrow-right next_slide slick-arrow"></i>
+            <i class="icon icon-arrow-left prev_slide slick-arrow"></i>
+        </div>
+    </section>
+
+
+
+
+    <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/index.js' %}"></script>
+{% endblock %}

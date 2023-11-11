@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/components/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="blog_hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7">
+                    <div class="slider">
+                        {% for post in posts %}
+                            <a href="{{ post.get_absolute_url }}" class="item main">
+                                <img src="{% static 'assets/img/blog/1.jpeg' %}" alt="image" class="image">
+                                <div class="info">
+                                    <h3 class="title">{{ post.title }}</h3>
+                                    <p class="desc">
+                                        {{ post.text }}
+                                    </p>
+                                </div>
+                            </a>
+                        {% endfor %}
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 d-md-block d-none">
+                    <div class="row">
+                        {% for post in posts %}
+                            <div class="col-lg-6 col-12">
+                                <a href="{{ post.get_absolute_url }}" class="item">
+                                    <img src="{% static 'assets/img/blog/2.jpeg' %}" alt="image" class="image">
+                                    <div class="info">
+                                        <h3 class="title">{{ post.title }}</h3>
+                                        <p class="desc">
+                                            {{ post.text }}
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog_items">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="top_title d-md-block d-none">
+                        <div class="info">
+                            <h3 class="title">بلاگ</h3>
+                            <p class="desc">اینجا میتونی تازه ترین مطالب در حوزه املاک رو بخونی</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for post in posts %}
+                            <div class="col-lg-4 col-md-6">
+                                <a href="{{ post.get_absolute_url }}" class="product_item sec">
+                                    <img src="{% static 'assets/img/1.jpg' %}" alt="image" class="image">
+                                    <h3 class="title">{{ post.title }}</h3>
+                                    <p class="desc">
+                                        {{ post.text }}
+                                    </p>
+                                    <span class="link">خواندن</span>
+                                </a>
+                            </div>
+                            {% endfor %}
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/blog.js' %}"></script>
+{% endblock %}
